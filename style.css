@@ -183,3 +183,38 @@ form {
     color: white;
     margin-top: 50px;
 }
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .recipe-item {
+        width: 280px;
+        margin: 0;
+        justify-content: space-between;
+        /* padding: 20px; */
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    /* For mobile phones */
+    .recipe-item {
+        width: 320px;
+        margin-top: 10px;
+    }
+    form {
+        background-image: none;
+        padding: auto;
+    }
+    .email-input {
+        border: 1px solid black;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-text {
+        color: black;
+        width: 80%;
+        text-align: center;
+        margin: 20px auto;
+    }
+}
