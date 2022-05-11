@@ -1,3 +1,77 @@
+/* loader */
+.load {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+    grid-template-rows: 400px;
+    gap: 10px;
+    padding-top: 100px;
+}
+
+.box {
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 3px  rgba(0, 0, 0, 0.5);
+    transition:all .15s ease;
+}
+
+.box:hover {
+    box-shadow: none;
+}
+
+/* Loader */
+.loader {
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: all 5s ease;
+}
+
+.ring {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(247, 210, 0);
+    border-radius: 50%;
+    position:  relative;
+}
+
+.ring::after {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgb(0, 255, 13);
+    border-radius: 50%;
+    border-top: transparent;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
 /* Comfortaa - font family
 
 #f0932b - olovrang
