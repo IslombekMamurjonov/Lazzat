@@ -160,13 +160,35 @@ nav {
     text-transform: uppercase;
     transition: background-color 1s;
 }
-.nav-link:hover {
+
+.b:hover {
     background-color: rgb(0,0,0, .3);
 }
 .nav-link:active {
     background-color: rgb(0,0,0, .3);
     color: #ff4d4d;
 }
+
+.foods:hover {
+    background-color: rgba(240, 148, 43, 0.8);
+    color: white;
+}
+
+.salads:hover {
+    background-color: rgba(187, 220, 88, 0.8);
+    color: white;
+}
+
+.deserts:hover {
+    background-color: rgba(255, 77, 77, 0.8);
+    color: white;
+}
+
+.drinks:hover {
+    background-color: rgba(126, 213, 223, 0.8);
+    color: white;
+}
+
 .main {
     text-align: center;
 }
@@ -194,6 +216,7 @@ nav {
     width: 100%;
     height: 220px;
     object-fit: cover;
+    /* border-radius: 10px; */
 }
 .recipe-category {
     color: white;
@@ -240,13 +263,13 @@ form {
     padding: 100px 0;
     text-align: center;
 }
-.email-input {
+.search-input {
     padding: 10px 20px;
     width: 400px;
     border: none;
     margin-right: 20px;
 }
-.email-submit {
+.search-submit {
     background-color: #ff4d4d;
     color: white;
     border: none;
@@ -256,6 +279,50 @@ form {
 .subscribe-text {
     color: white;
     margin-top: 50px;
+}
+
+.food {
+    border: 1px solid #f0932b;
+    padding: 5px;
+    box-shadow: 4px 4px 4px 0 #f0932b;
+    transition: box-shadow .5s;
+}
+
+.food:hover {
+    box-shadow: none;
+}
+
+.drink {
+    border: 1px solid rgba(126, 213, 223, 0.87);
+    padding: 5px;
+    box-shadow: 4px 4px 4px 0 #7ed6df;
+    transition: box-shadow .5s;
+}
+
+.drink:hover {
+    box-shadow: none;
+}
+
+.dezert {
+    border: 1px solid #ff4d4d;
+    padding: 5px;
+    box-shadow: 4px 4px 4px 0 #ff4d4d;
+    transition: box-shadow .5s;
+}
+
+.dezert:hover {
+    box-shadow: none;
+}
+
+.salad {
+    border: 1px solid #badc58;
+    padding: 5px;
+    box-shadow: 4px 4px 4px 0 #badc58;
+    transition: box-shadow .5s;
+}
+
+.salad:hover {
+    box-shadow: none;
 }
 
 @media only screen and (max-width:800px) {
@@ -273,13 +340,13 @@ form {
     /* For mobile phones */
     .recipe-item {
         width: 320px;
-        margin-top: 10px;
+        margin-top: 15px;
     }
     form {
         background-image: none;
         padding: auto;
     }
-    .email-input {
+    .search-input {
         border: 1px solid black;
         width: 80%;
         margin-bottom: 20px;
